@@ -65,28 +65,6 @@ const App = () => {
         </div>
     )
 }
-// const App = () => {
-//     const [counter, setCounter] = useState(0);//Destructuring
-//     const increaseByOne = () => setCounter(counter + 1);
-//     const decreaseByOne = () => setCounter(counter - 1);
-//     const resetCounter = () => setCounter(0);
-//     return (
-//         <div>
-//             <Display counter={counter}/>
-//             <Button clickEvent = {increaseByOne} displayText ='+'/>
-//             <Button clickEvent = {decreaseByOne} displayText ='-'/>
-//             <Button clickEvent = {resetCounter} displayText ='Reset'/>
-//
-//         </div>
-//     )
-// }
-//
-// const Display = ({counter}) => {
-//     return(
-//         <div>{counter}</div>
-//     )
-// }
-//
 const Button = ({clickEvent, displayText}) => {
     return(
         <button onClick={clickEvent}>{displayText}</button>
